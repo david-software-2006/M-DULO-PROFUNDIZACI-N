@@ -1,0 +1,14 @@
+C:\Users\MAYE SALAS\source\repos\Ejercicio POO\Ejercicio POO\bin\Debug\net9.0\Ejercicio POO.exe
+C:\Users\MAYE SALAS\source\repos\Ejercicio POO\Ejercicio POO\bin\Debug\net9.0\Ejercicio POO.deps.json
+C:\Users\MAYE SALAS\source\repos\Ejercicio POO\Ejercicio POO\bin\Debug\net9.0\Ejercicio POO.runtimeconfig.json
+C:\Users\MAYE SALAS\source\repos\Ejercicio POO\Ejercicio POO\bin\Debug\net9.0\Ejercicio POO.dll
+C:\Users\MAYE SALAS\source\repos\Ejercicio POO\Ejercicio POO\bin\Debug\net9.0\Ejercicio POO.pdb
+C:\Users\MAYE SALAS\source\repos\Ejercicio POO\Ejercicio POO\obj\Debug\net9.0\Ejercicio POO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MAYE SALAS\source\repos\Ejercicio POO\Ejercicio POO\obj\Debug\net9.0\Ejercicio POO.AssemblyInfoInputs.cache
+C:\Users\MAYE SALAS\source\repos\Ejercicio POO\Ejercicio POO\obj\Debug\net9.0\Ejercicio POO.AssemblyInfo.cs
+C:\Users\MAYE SALAS\source\repos\Ejercicio POO\Ejercicio POO\obj\Debug\net9.0\Ejercicio POO.csproj.CoreCompileInputs.cache
+C:\Users\MAYE SALAS\source\repos\Ejercicio POO\Ejercicio POO\obj\Debug\net9.0\Ejercicio POO.dll
+C:\Users\MAYE SALAS\source\repos\Ejercicio POO\Ejercicio POO\obj\Debug\net9.0\refint\Ejercicio POO.dll
+C:\Users\MAYE SALAS\source\repos\Ejercicio POO\Ejercicio POO\obj\Debug\net9.0\Ejercicio POO.pdb
+C:\Users\MAYE SALAS\source\repos\Ejercicio POO\Ejercicio POO\obj\Debug\net9.0\Ejercicio POO.genruntimeconfig.cache
+C:\Users\MAYE SALAS\source\repos\Ejercicio POO\Ejercicio POO\obj\Debug\net9.0\ref\Ejercicio POO.dll
