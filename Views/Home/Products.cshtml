@@ -1,0 +1,35 @@
+@model IEnumerable<CRUD.Models.Product>
+
+@{
+    ViewData["Title"] = "Products page";
+}
+
+<h2>Lista de productos</h2>
+
+<a href="/Home/CrearProducto" class="btn btn-success">Agregar producto</a>
+
+
+
+<table class="table table-dark">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Category</th>
+            <th>Functions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var producto in Model)
+        {
+            <tr>
+                <td>@producto.Name</td>
+                <td>@producto.Price</td>
+                <td>@producto.Category</td>
+                <td>
+                    <a href="@Url.Action("ActualizarProducto", "Home", new { id = producto.Id })" class="btn btn-warning">Edit</a>
+                    <a href="@Url.Action("EliminarProducto", "Home", new { id = producto.Id })" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+</table>

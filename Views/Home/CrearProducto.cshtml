@@ -1,0 +1,35 @@
+@model CRUD.Models.Product;
+
+@{
+    ViewData["Title"] = "¡Crear Producto!";
+}
+
+<h2>Crear un nuevo producto</h2>
+
+<form asp-action="CrearProducto" method="post" class="mt-4">
+    <div class="mb-3">
+        <label for="Nombre" class="form-label">Name</label>
+        <input asp-for="Name" class="form-control bg-dark text-light custom-placeholder" placeholder="Nombre del producto" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label for="Precio" class="form-label">Price</label>
+        <input asp-for="Price" class="form-control bg-dark text-light custom-placeholder" placeholder="Precio del producto" /> 
+        <span asp-validation-for="Price" class="text-danger"></span>  
+    </div>
+
+    <div class="mb-3">
+        <label for="Categoria" class="form-label">Category</label>
+        <input asp-for="Category" class="form-control bg-dark text-light custom-placeholder" placeholder="Categoria del producto" />
+        <span asp-validation-for="Category" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label for="Descripcion" class="form-label">Description</label>
+        <input asp-for="Description" class="form-control bg-dark text-light custom-placeholder" placeholder="Descripcion del producto" />
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+    
+    <button type="submit" class="btn btn-success">Crear</button>
+</form>
