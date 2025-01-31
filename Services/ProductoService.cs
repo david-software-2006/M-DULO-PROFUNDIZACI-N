@@ -3,12 +3,14 @@ using CRUD.Models;
 
 namespace CRUD.Services;
 
-public interface IProductoService {
+public interface IProductoService
+{
     IEnumerable<Product> GetAll();
     Product GetById(int id);
     void Add(Product product);
     void Update(Product product);
     void Delete(int id);
+    IEnumerable<Product> BuscarProductos(string query);
 }
 
 public class ProductoService : IProductoService
@@ -19,11 +21,26 @@ public class ProductoService : IProductoService
     {
         _productoRepository = productoRepository;
     }
+public IEnumerable<Product> BuscarProductos(string query)
+{
+    if (string.IsNullOrWhiteSpace(query))
+    {
+        return _productoRepository.GetAll();
+    }
+
+    query = query.ToLower();
+
+    return _productoRepository.GetAll().Where(p =>
+        (!string.IsNullOrEmpty(p.Name) && p.Name.ToLower().Contains(query)) ||
+        (!string.IsNullOrEmpty(p.Category) && p.Category.ToLower().Contains(query)) ||
+        p.Price.ToString().Contains(query)
+    );
+}
 
     public IEnumerable<Product> GetAll()
     {
         return _productoRepository.GetAll();
-        
+
     }
 
     public Product GetById(int id)

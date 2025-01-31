@@ -32,12 +32,19 @@ public class HomeController : Controller
         return View(productos);
     }
 
+   public IActionResult BuscarProducto(string query)
+{
+    var productos = _productoService.BuscarProductos(query);
+    return View("Products", productos);
+}
+
     public IActionResult CrearProducto()
     {
         return View();
     }
 
     [HttpPost]
+
     public IActionResult CrearProducto(Product product)
     {
         if (ModelState.IsValid)
@@ -55,25 +62,25 @@ public class HomeController : Controller
         {
             return NotFound("Producto no encontrado");
         }
-        return View(product);  
+        return View(product);
     }
 
     [HttpPost]
-   [HttpPost]
-public IActionResult ActualizarProducto(Product product)
-{
-    if (product.Id == 0)
+    [HttpPost]
+    public IActionResult ActualizarProducto(Product product)
     {
-        return BadRequest("Id del producto no proporcionado");
-    }
+        if (product.Id == 0)
+        {
+            return BadRequest("Id del producto no proporcionado");
+        }
 
-    if (ModelState.IsValid)
-    {
-        _productoService.Update(product);
-        return RedirectToAction("Products");
+        if (ModelState.IsValid)
+        {
+            _productoService.Update(product);
+            return RedirectToAction("Products");
+        }
+        return View(product);
     }
-    return View(product);
-}
     public IActionResult EliminarProducto(int id)
     {
         var producto = _productoService.GetById(id);
@@ -82,7 +89,7 @@ public IActionResult ActualizarProducto(Product product)
             return NotFound("Producto no encontrado");
         }
 
-        return View(producto); 
+        return View(producto);
     }
 
 
@@ -93,8 +100,8 @@ public IActionResult ActualizarProducto(Product product)
         var producto = _productoService.GetById(id);
         if (producto != null)
         {
-            _productoService.Delete(id); // Elimina el producto
-            return RedirectToAction("Products"); // Redirige de nuevo a la lista de productos
+            _productoService.Delete(id); 
+            return RedirectToAction("Products"); 
         }
         return NotFound("Producto no encontrado");
     }
