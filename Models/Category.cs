@@ -1,4 +1,4 @@
-﻿using System.Text.Json.Serialization;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ProductsApp.Models
 {
@@ -6,10 +6,7 @@ namespace ProductsApp.Models
     {
         public int Id { get; set; }
 
+        [Column(TypeName = "text")]
         public string Name { get; set; } = string.Empty;
-
-        [JsonIgnore]
-        public List<Products> Products { get; set; } = new List<Products>();
-
     }
 }

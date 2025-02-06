@@ -1,8 +1,9 @@
-﻿using System.Text.Json.Serialization;
+﻿using ProductsApp.Models;
+using System.Text.Json.Serialization;
 
-namespace ProductsApp.Models
+namespace ProductsApp.Dtos
 {
-    public class ProductDetail
+    public class ProductDetailDto
     {
         public int Id { get; set; }
         public int ProductId { get; set; }
@@ -10,8 +11,5 @@ namespace ProductsApp.Models
         public int Stock { get; set; } = 0;
         public decimal? Weight { get; set; }
         public string? Dimensions { get; set; }
-
-        [JsonIgnore]
-        public Product? Product { get; set; }
     }
 }
