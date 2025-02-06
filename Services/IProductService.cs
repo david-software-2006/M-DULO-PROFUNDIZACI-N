@@ -1,15 +1,14 @@
-﻿using ProductsApp.Models;
+﻿using ProductsApp.Dtos;
+using ProductsApp.Models;
 
 namespace ProductsApp.Services
 {
     public interface IProductService
     {
-        Task<IEnumerable<Products>> GetAllProductsAsync();
-        Task<Products?> GetProductByIdAsync(int id);
-        Task AddProductAsync(Products product);
-        Task UpdateProductAsync(Products product);
+        Task<(IEnumerable<Product> items, int totalItems, int totalPages)> GetAllProductsAsync(int page, int size);
+        Task<Product?> GetByIdAsync(int id);
+        Task AddProductAsync(ProductDto productDto);
+        Task UpdateProductAsync(int id, ProductDto productDto);
         Task DeleteProductAsync(int id);
-        Task<ProductDetail?> GetProductDetailByProductIdAsync(int productId);
-        Task AddProductDetailAsync(ProductDetail productDetail);
     }
 }

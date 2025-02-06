@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MAYE SALAS\\ProductsApp\\ProductsApp.csproj": {}
+    "D:\\ProductsApp\\ProductsApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MAYE SALAS\\ProductsApp\\ProductsApp.csproj": {
+    "D:\\ProductsApp\\ProductsApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MAYE SALAS\\ProductsApp\\ProductsApp.csproj",
+        "projectUniqueName": "D:\\ProductsApp\\ProductsApp.csproj",
         "projectName": "ProductsApp",
-        "projectPath": "C:\\Users\\MAYE SALAS\\ProductsApp\\ProductsApp.csproj",
+        "projectPath": "D:\\ProductsApp\\ProductsApp.csproj",
         "packagesPath": "C:\\Users\\MAYE SALAS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MAYE SALAS\\ProductsApp\\obj\\",
+        "outputPath": "D:\\ProductsApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -62,7 +62,11 @@
               "target": "Package",
               "version": "[9.0.1, )"
             },
-            "Microsoft.EntityFrameworkCore.Design": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
