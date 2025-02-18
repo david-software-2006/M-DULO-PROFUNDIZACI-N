@@ -1,0 +1,12 @@
+C:\Users\MAYE SALAS\Desktop\tdd.test\TDD.Core\bin\Debug\net9.0\TDD.Core.deps.json
+C:\Users\MAYE SALAS\Desktop\tdd.test\TDD.Core\bin\Debug\net9.0\TDD.Core.dll
+C:\Users\MAYE SALAS\Desktop\tdd.test\TDD.Core\bin\Debug\net9.0\TDD.Core.pdb
+C:\Users\MAYE SALAS\Desktop\tdd.test\TDD.Core\obj\Debug\net9.0\TDD.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MAYE SALAS\Desktop\tdd.test\TDD.Core\obj\Debug\net9.0\TDD.Core.AssemblyInfoInputs.cache
+C:\Users\MAYE SALAS\Desktop\tdd.test\TDD.Core\obj\Debug\net9.0\TDD.Core.AssemblyInfo.cs
+C:\Users\MAYE SALAS\Desktop\tdd.test\TDD.Core\obj\Debug\net9.0\TDD.Core.csproj.CoreCompileInputs.cache
+C:\Users\MAYE SALAS\Desktop\tdd.test\TDD.Core\obj\Debug\net9.0\TDD.Core.sourcelink.json
+C:\Users\MAYE SALAS\Desktop\tdd.test\TDD.Core\obj\Debug\net9.0\TDD.Core.dll
+C:\Users\MAYE SALAS\Desktop\tdd.test\TDD.Core\obj\Debug\net9.0\refint\TDD.Core.dll
+C:\Users\MAYE SALAS\Desktop\tdd.test\TDD.Core\obj\Debug\net9.0\TDD.Core.pdb
+C:\Users\MAYE SALAS\Desktop\tdd.test\TDD.Core\obj\Debug\net9.0\ref\TDD.Core.dll
