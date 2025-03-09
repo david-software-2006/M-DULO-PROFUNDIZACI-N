@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api Pokémon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex flex-col items-center p-8">
+    <h1 class="text-4xl font-bold mb-6">¡Explora el mundo Pokémon!</h1>
+    <h2 class="text-2xl mb-4">Atrapa, conoce y descubre a tus Pokémon favoritos</h2>
+    
+    <input type="text" id="searchInput" placeholder="Busca tu Pokémon..." 
+        class="border-2 border-white bg-gray-800 text-white rounded-full p-4 w-full max-w-md mb-6 
+               focus:outline-none focus:ring-4 focus:ring-blue-400 shadow-xl" 
+        onkeyup="filterPokemon()">
+    
+    <div id="pokemonList" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10 w-full max-w-6xl"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
