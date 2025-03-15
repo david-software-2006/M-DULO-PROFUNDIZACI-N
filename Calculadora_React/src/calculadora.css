@@ -1,0 +1,95 @@
+
+  .calculator {
+    padding: 1rem;
+    max-width: 22rem;
+    margin: 0 auto;
+    background: #1a1a1a;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Estilos del título */
+  .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    position: relative;
+    text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Estilos del display */
+  .display {
+    border: 2px solid #333;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    text-align: right;
+    font-size: 1.8rem;
+    background: #000;
+    border-radius: 8px;
+    font-family: monospace;
+    box-shadow: inset 0 4px 8px rgba(255, 255, 255, 0.1);
+    position: relative;
+  }
+  
+  /* Distribución de los botones */
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+    position: relative;
+  }
+  
+  /* Estilos de los botones */
+  .button {
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+  }
+  
+  /* Efecto al presionar un botón */
+  .button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Colores específicos */
+  .button.green {
+    background-color: #22c55e; /* Verde */
+    color: white;
+  }
+  
+  .button.red {
+    background-color: #ef4444; /* Rojo */
+    color: white;
+  }
+  
+  .button.yellow {
+    background-color: #eab308; /* Amarillo */
+    color: white;
+  }
+  
+  .button.blue {
+    background-color: #2563eb; /* Azul */
+    color: white;
+  }
+  
+  /* Hover en botones */
+  .button:hover {
+    opacity: 0.85;
+  }
+  
+  /* Estilo para botones de operaciones especiales */
+  .button.yellow, .button.red {
+    font-size: 1.1rem;
+  }
+  
